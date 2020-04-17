@@ -5,8 +5,9 @@ import ExampleData from "./ExampleData";
 import axios from "axios";
 import { storeNameArr } from "./data";
 
-const POST_URL = `${process.env.SERVER_URL}/record`;
-const GET_URL = `${process.env.SERVER_URL}/user`;
+const SERVER_URL = "http://13.125.25.132:8000";
+const POST_URL = `${SERVER_URL}/record`;
+const GET_URL = `${SERVER_URL}/user`;
 
 const App = () => {
   const [option, setOption] = useState({ id: "", option: "" });
